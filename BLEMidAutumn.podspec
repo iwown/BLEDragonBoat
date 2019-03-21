@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 s.name         = 'BLEMidAutumn'
 
-s.version      = "0.1.4"
+s.version      = "0.1.5"
 
 s.summary      = 'BLE connect handle as a central manager'
 
