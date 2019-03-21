@@ -17,11 +17,13 @@ FOUNDATION_EXPORT const unsigned char BLEMidAutumnVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <BLEMidAutumn/PublicHeader.h>
 
 #import <BLEMidAutumn/BLEAutumn.h>
-#import <BLEMidAutumn/AutumnHeader.h>
 #import <BLEMidAutumn/BLEquinox.h>
 #import <BLEMidAutumn/BLESolstice.h>
+#import <BLEMidAutumn/SolsticeImpl.h>
+#import <BLEMidAutumn/BLEDataHandle.h>
 #import <BLEMidAutumn/ZRBlePeripheral.h>
-#import <BLEMidAutumn/ZRModel.h>
-#import <BLEMidAutumn/ZRHWOption.h>
+#import <BLEMidAutumn/NSStringUtils.h>
+#import <BLEMidAutumn/IVBLEUtils.h>
+#import <BLEMidAutumn/IVBLEDefaults.h>
 #import <BLEMidAutumn/ZRHealthData.h>
 
