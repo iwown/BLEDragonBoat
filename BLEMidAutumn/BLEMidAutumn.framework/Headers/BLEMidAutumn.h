@@ -26,4 +26,4 @@ FOUNDATION_EXPORT const unsigned char BLEMidAutumnVersionString[];
 #import <BLEMidAutumn/IVBLEUtils.h>
 #import <BLEMidAutumn/IVBLEDefaults.h>
 #import <BLEMidAutumn/ZRHealthData.h>
-
+#import <BLEMidAutumn/ZRModel.h>
