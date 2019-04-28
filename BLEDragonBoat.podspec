@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-s.name         = 'BLEMidAutumn'
+s.name         = 'BLEDragonBoat'
 
 s.version      = "0.2.1"
 
@@ -10,9 +10,9 @@ s.license      = 'MIT'
 
 s.author       = { "xuezou" => "377949550@qq.com" }
 
-s.homepage     = 'https://github.com/xuezou/BLEMidAutumn'
+s.homepage     = 'https://github.com/xuezou/BLEDragonBoat'
 
-s.source       = { :git => "https://github.com/xuezou/BLEMidAutumn.git", :tag => s.version}
+s.source       = { :git => "https://github.com/xuezou/BLEDragonBoat.git", :tag => s.version}
 
 s.platform     = :ios
 
@@ -20,7 +20,7 @@ s.ios.deployment_target = "9.0"
 
 s.frameworks = 'Foundation'
 
-s.vendored_frameworks = 'BLEMidAutumn/BLEMidAutumn.framework'
+s.vendored_frameworks = 'BLEDragonBoat/BLEDragonBoat.framework'
 
 s.requires_arc = true
 
