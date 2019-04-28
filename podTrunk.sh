@@ -9,10 +9,10 @@ fi
 VERSION=$1
 
 cd /Users/scow/GitHub/BLEMidAutumn/ 
-sed -i "" "s/\([0-9]\)\.\([0-9]\)\.\([0-9]\)/${VERSION}/g" BLEMidAutumn.podspec
+sed -i "" "s/\([0-9]\)\.\([0-9]\)\.\([0-9]\)/${VERSION}/g" BLEDragonBoat.podspec
 git commit -am "${VERSION}" 
 git push
 git tag ${VERSION}
 git push --tags
 pod lib lint
-pod trunk push BLEMidAutumn.podspec
+pod trunk push BLEDragonBoat.podspec
