@@ -18,12 +18,12 @@ FOUNDATION_EXPORT const unsigned char BLEDragonBoatVersionString[];
 
 
 #import <BLEDragonBoat/BLEDragon.h>
-#import <BLEDragonBoat/BLEquinox.h>
-#import <BLEDragonBoat/BLESolstice.h>
-#import <BLEDragonBoat/SolsticeImpl.h>
-#import <BLEDragonBoat/BLEDataHandle.h>
-#import <BLEDragonBoat/ZRBlePeripheral.h>
-#import <BLEDragonBoat/NSStringUtils.h>
-#import <BLEDragonBoat/IVBLEUtils.h>
-#import <BLEDragonBoat/ZRHealthData.h>
-#import <BLEDragonBoat/ZRModel.h>
+#import <BLEDragonBoat/DNBQuinox.h>
+#import <BLEDragonBoat/DNBSolstice.h>
+#import <BLEDragonBoat/DNBSolsticeImpl.h>
+#import <BLEDragonBoat/DNBDataHandle.h>
+#import <BLEDragonBoat/DNBBlePeripheral.h>
+#import <BLEDragonBoat/DNBNSStringUtils.h>
+#import <BLEDragonBoat/DNBUtils.h>
+#import <BLEDragonBoat/DNBHealthData.h>
+#import <BLEDragonBoat/DNBModel.h>

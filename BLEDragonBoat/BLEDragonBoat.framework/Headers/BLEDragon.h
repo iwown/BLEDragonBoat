@@ -1,6 +1,6 @@
 //
 //  BLEDragon.h
-//  BLESolstice
+//  DNBSolstice
 //
 //  Created by A$CE on 2017/10/9.
 //  Copyright © 2017年 A$CE. All rights reserved.
@@ -9,8 +9,8 @@
 #define BLE_MAIN_RESTORE_IDENTIFIER @"com.iwown.dragon"
 #define BLE_MID_AUTUMN_PLIST @"dragonBoat"  //Config file name in @"dragonBoat.plist";
 
-#import "BLESolstice.h"
-#import "BLEQuinox.h"
+#import "DNBSolstice.h"
+#import "DNBQuinox.h"
 #import <Foundation/Foundation.h>
 
 /**
@@ -60,19 +60,19 @@
 
 /**
  Connectted only. For scenarios with short-term connections, the SDK does not implement the binding mechanism, so there is no need to reconnect. For example, body fat scale products.*/
-- (void)connectDevice:(ZRBlePeripheral *)device;
+- (void)connectDevice:(DNBBlePeripheral *)device;
 
-- (void)cancelConnectBy:(id<BLESolstice>)solstice;
+- (void)cancelConnectBy:(id<DNBSolstice>)solstice;
 
 /*Class Method ,use @CODE{[[BLEDragon alloc] init];}*/
 + (instancetype)dragonBoat;
 
 /**
- * If you need a <BLESolstice> object to communicate with device, after searching and connecting to the device with BLEDragon, please using the this method initinal the object, you must had a peripheral device that has been connected.
+ * If you need a <DNBSolstice> object to communicate with device, after searching and connecting to the device with BLEDragon, please using the this method initinal the object, you must had a peripheral device that has been connected.
  
  @param zrPeripheral the Device had connected
- @return Follow the BLESolstice agreement object
+ @return Follow the DNBSolstice agreement object
  */
-- (id<BLESolstice>)solsticeWithConnectedPeripheral:(ZRBlePeripheral *)zrPeripheral;
+- (id<DNBSolstice>)solsticeWithConnectedPeripheral:(DNBBlePeripheral *)zrPeripheral;
 
 @end
