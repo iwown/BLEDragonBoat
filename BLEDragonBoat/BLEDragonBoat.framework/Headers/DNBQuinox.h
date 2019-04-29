@@ -11,7 +11,7 @@
 /**
  DicoverDeleagte，Response delegate methods in discover device.
  */
-@protocol BleDiscoverDelegate <NSObject>
+@protocol DnbDiscoverDelegate <NSObject>
 
 @required
 
@@ -32,7 +32,7 @@
 /**
  ConnectDeleagte，Response delegate methods in device connect method.
  */
-@protocol BleConnectDelegate <NSObject>
+@protocol DnbConnectDelegate <NSObject>
 
 @required
 /**

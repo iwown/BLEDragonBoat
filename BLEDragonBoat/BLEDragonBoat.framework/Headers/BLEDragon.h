@@ -21,8 +21,8 @@
  */
 @interface BLEDragon : NSObject
 
-@property (nonatomic ,weak) id<BleDiscoverDelegate>discoverDelegate;
-@property (nonatomic ,weak) id<BleConnectDelegate>connectDelegate;
+@property (nonatomic ,weak) id<DnbDiscoverDelegate>discoverDelegate;
+@property (nonatomic ,weak) id<DnbConnectDelegate>connectDelegate;
 
 /**
  Represents the current state of a CBManager. <CBManagerState> <CBCentralManagerState> used for below iOS10.
