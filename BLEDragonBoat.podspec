@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 s.name         = 'BLEDragonBoat'
 
-s.version      = "0.3.6"
+s.version      = "0.4.0"
 
 s.summary      = 'BLE connect handle as a central manager'
 
