@@ -61,8 +61,11 @@
 /**
  Connectted only. For scenarios with short-term connections, the SDK does not implement the binding mechanism, so there is no need to reconnect. For example, body fat scale products.*/
 - (void)connectDevice:(DNBBlePeripheral *)device;
-
+/**! Cancel a connect*/
 - (void)cancelConnectBy:(id<DNBSolstice>)solstice;
+
+/**! Recover connect device by uuidString.*/
+- (void)recoverConnect:(NSString *)uuidString;
 
 /*Class Method ,use @CODE{[[BLEDragon alloc] init];}*/
 + (instancetype)dragonBoat;
