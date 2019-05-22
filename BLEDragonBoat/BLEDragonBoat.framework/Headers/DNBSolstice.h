@@ -19,11 +19,13 @@
  */
 @protocol DNBSolstice <NSObject,CBPeripheralDelegate>
 
+@required
 /**
  * Get solstice instance by peripheral device.
  */
 + (id<DNBSolstice>)cDNBSolstice:(DNBBlePeripheral *)bleDevice;
 
+@optional
 /**
  This method can help you to get that Device object you are connected to.
 
