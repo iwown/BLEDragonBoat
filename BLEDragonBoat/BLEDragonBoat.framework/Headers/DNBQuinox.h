@@ -67,8 +67,8 @@
 @end
 
 
-@class ZRDeviceInfo;
-@class ZRDataInfo;
+@class DNBDeviceInfo;
+@class DNBDataInfo;
 @class DNBHealthData;
 @protocol DNBQuinox <NSObject>
 
@@ -76,13 +76,13 @@
 /**! The handshake is completed, the initial setup is completed, and the App business logic can be executed.<##>*/
 - (void)bleSolsticeIsReady;
 /**! Update the device information callback, which is called when the device's Bluetooth address, model number, version information, or battery status changes.*/
-- (void)bleSolsticeUpdateDeviceInfo:(ZRDeviceInfo *)deviceInfo;
+- (void)bleSolsticeUpdateDeviceInfo:(DNBDeviceInfo *)deviceInfo;
 
 @optional
 /**Return data information*/
-- (void)updateNormalHealthDataInfo:(ZRDataInfo *)zrDInfo;
+- (void)updateNormalHealthDataInfo:(DNBDataInfo *)dInfo;
 /**Return data.@See more in DNBHealthData*/
-- (void)updateNormalHealthData:(DNBHealthData *)zrhData;
+- (void)updateNormalHealthData:(DNBHealthData *)hData;
 /**! Data synchronization progress, progress of a call to detailed data*/
 - (void)responseDataProgress:(NSInteger)progress;
 @end

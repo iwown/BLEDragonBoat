@@ -49,7 +49,7 @@
 @end
 
 
-@interface ZRDeviceInfo : NSObject
+@interface DNBDeviceInfo : NSObject
 /**! Device Model<##>*/
 @property (nonatomic ,strong) NSString *model;
 /**! Version of firmware, formatter is A.B.C.D, like 1.0.2.32<##>*/
