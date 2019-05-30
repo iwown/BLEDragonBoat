@@ -56,7 +56,14 @@
 @property (nonatomic ,strong) NSString *version;
 /**! BLE mac address. Unique identifier of the device*/
 @property (nonatomic ,strong) NSString *bleAddr;
-/**! Battery power level; 1~100*/
-@property (nonatomic ,assign) NSInteger batLevel;
+
 @end
 
+
+@interface DNBBattery : NSObject
+/**! Battery power level; 1~100*/
+@property (nonatomic ,assign) NSInteger batLevel;
+/**! 1-Charging, 2-normal, 0-Unascertainable*/
+@property (nonatomic ,assign) NSInteger charging;
+
+@end

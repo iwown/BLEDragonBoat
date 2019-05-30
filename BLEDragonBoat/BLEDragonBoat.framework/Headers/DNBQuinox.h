@@ -67,6 +67,7 @@
 @end
 
 
+@class DNBBattery;
 @class DNBDeviceInfo;
 @class DNBDataInfo;
 @class DNBHealthData;
@@ -75,8 +76,10 @@
 @required
 /**! The handshake is completed, the initial setup is completed, and the App business logic can be executed.<##>*/
 - (void)bleSolsticeIsReady;
-/**! Update the device information callback, which is called when the device's Bluetooth address, model number, version information, or battery status changes.*/
+/**! Update the device information callback, which is called when the device's Bluetooth address, model number, version information*/
 - (void)bleSolsticeUpdateDeviceInfo:(DNBDeviceInfo *)deviceInfo;
+/**! Battery information updated.*/
+- (void)bleSolsticeUpdateBatteryLevel:(DNBBattery *)battery;
 
 @optional
 /**Return data information*/
