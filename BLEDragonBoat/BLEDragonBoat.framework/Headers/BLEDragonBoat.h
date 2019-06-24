@@ -27,3 +27,21 @@ FOUNDATION_EXPORT const unsigned char BLEDragonBoatVersionString[];
 #import <BLEDragonBoat/DNBUtils.h>
 #import <BLEDragonBoat/DNBHealthData.h>
 #import <BLEDragonBoat/DNBModel.h>
+
+
+
+
+
+
+
+
+
+/*****************************************************************************
+ ****
+ ** BLEDragonBoat.h                          *   * * *
+ ** Version : 0.4.7                          *   *
+ ** Date : 2019-05-30                        * * * * *
+ **                                              *   *
+ **                                          * * *   *
+ ****
+ ***************************************************************************/
