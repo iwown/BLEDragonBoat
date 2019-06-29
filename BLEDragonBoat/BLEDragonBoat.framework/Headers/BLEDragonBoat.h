@@ -39,8 +39,8 @@ FOUNDATION_EXPORT const unsigned char BLEDragonBoatVersionString[];
 /*****************************************************************************
  ****
  ** BLEDragonBoat.h                          *   * * *
- ** Version : 0.4.8                          *   *
- ** Date : 2019-06-24                        * * * * *
+ ** Version : 0.5.0                          *   *
+ ** Date : 2019-06-29                        * * * * *
  **                                              *   *
  **                                          * * *   *
  ****

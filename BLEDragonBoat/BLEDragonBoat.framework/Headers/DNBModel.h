@@ -95,6 +95,7 @@ typedef enum{
     braceletLanguageNorwegian = 19,
     braceletLanguageDutch = 20,
     braceletLanguageCzech = 21,
+    braceletLanguageChineseTraditional = 22,
     braceletLanguageSimpleMarkings = 0xff, //This setting means no char ,all information replaced by figure. show simple icon only.
 }DNB_braceletLanguage;
 
