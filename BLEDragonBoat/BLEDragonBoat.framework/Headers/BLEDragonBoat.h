@@ -21,7 +21,6 @@ FOUNDATION_EXPORT const unsigned char BLEDragonBoatVersionString[];
 #import <BLEDragonBoat/DNBQuinox.h>
 #import <BLEDragonBoat/DNBSolstice.h>
 #import <BLEDragonBoat/DNBSolsticeImpl.h>
-#import <BLEDragonBoat/DNBDataHandle.h>
 #import <BLEDragonBoat/DNBBlePeripheral.h>
 #import <BLEDragonBoat/DNBNSStringUtils.h>
 #import <BLEDragonBoat/DNBUtils.h>
@@ -39,8 +38,8 @@ FOUNDATION_EXPORT const unsigned char BLEDragonBoatVersionString[];
 /*****************************************************************************
  ****
  ** BLEDragonBoat.h                          *   * * *
- ** Version : 0.5.0                          *   *
- ** Date : 2019-06-29                        * * * * *
+ ** Version : 1.0.1                          *   *
+ ** Date : 2020-02-29                        * * * * *
  **                                              *   *
  **                                          * * *   *
  ****

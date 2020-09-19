@@ -44,6 +44,9 @@ typedef struct {
 
 @optional
 - (void)thereIsSomeCmdGotTimeOut:(SCQASCReObj)sRobj;
+- (void)thereIsCharacterUuid:(NSString *)cUuid andDataValueRecevied:(NSData *)data;
+- (void)thereIsNotificationStateUpdate:(CBPeripheral *)pr andCharacter:(CBCharacteristic *)Character;
+- (void)thereIsDiscoverCharacter:(CBPeripheral *)pr andService:(CBService *)service;
 
 @end
 
@@ -60,9 +63,15 @@ typedef struct {
 /**! cmd queue flag, return YES, cancel block action*/
 @property (nonatomic, assign) BOOL cmdQueueCancelFlag;
 @property (nonatomic, assign) BOOL longCmdsDuring; //接收数据属于长命令，需要拆包的
+
+/** Default writeServiceUuid & writeCharacteristicUuid; Must SET Before calling writeToBracelet*/
+@property (nonatomic, copy) NSString *writeServiceUuid;
+@property (nonatomic, copy) NSString *writeCharacteristicUuid;
+/**! Default No*/
+@property (nonatomic, assign) BOOL isWriteResp;
+
 /**
  * Invoked after connected.
- * See also at @CODE{solsticeWithConnectedPeripheral:};
  @param peripheral the device 
  */
 - (BOOL)startWithConnecttedPeriphral:(CBPeripheral *)peripheral;
@@ -72,10 +81,6 @@ typedef struct {
 - (NSArray <NSString *>*)serviceUUIDs;
 - (NSArray <CBUUID *>*)discoverUuids;
 
-- (NSString *)writeServiceUuid;
-- (NSString *)writeCharacteristicUuid;
-- (BOOL)isWriteResp;
-- (void)setNotification:(CBPeripheral *)peripheral enable:(BOOL)enable andCharcater:(NSString *)character;
 - (void)setNotification:(CBPeripheral *)peripheral enable:(BOOL)enable andService:(NSString *)service andCharcater:(NSString *)character;
 
 - (dispatch_queue_t)bleQueue;
@@ -94,12 +99,11 @@ typedef struct {
 /**! Reveive Data*/
 - (void)braceletCmdReceive:(NSData *)rceData;
 - (void)braceletReceiveHRData:(NSInteger)hr;
-- (dispatch_queue_t)bleResponseQueue;
 
 - (void)writeToBracelet:(NSData *)writeData;
 - (void)writeCharacteristicBysUUID:(NSString *)sUUID cUUID:(NSString *)cUUID data:(NSData *)data withResponse:(BOOL)with;
 
-/*Protocol*/
-- (void)registerBleQuinox:(id<DNBQuinox>)quinox;
+/*ble Log Path*/
+- (void)registerBleLogPath:(NSString *)blePath;
 
 @end

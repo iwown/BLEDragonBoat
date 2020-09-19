@@ -72,12 +72,4 @@
 /**! Init a dragon boat without backMode. Dragon instance would initinal a centralManger with a nil option paramatter. see as initWithDelegate:queue:options: */
 + (instancetype)dragonBoatWithOutBackMode;
 
-/**
- * If you need a <DNBSolstice> object to communicate with device, after searching and connecting to the device with BLEDragon, please using the this method initinal the object, you must had a peripheral device that has been connected.
- 
- @param zrPeripheral the Device had connected
- @return Follow the DNBSolstice agreement object
- */
-- (id<DNBSolstice>)solsticeWithConnectedPeripheral:(DNBBlePeripheral *)zrPeripheral;
-
 @end
